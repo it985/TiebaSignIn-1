@@ -159,7 +159,7 @@ public class Run {
         Integer flag = 6;
         try {
             while (success.size() < followNum && flag > 0) {
-                LOGGER.info("-----第 {} 轮签到开始-----", 5 - flag + 1);
+                LOGGER.info("-----第 {} 轮签到开始-----", 6 - flag + 1);
                 LOGGER.info("还剩 {} 贴吧需要签到", followNum - success.size());
                 Iterator<String> iterator = follow.iterator();
                 while (iterator.hasNext()) {
@@ -168,7 +168,7 @@ public class Run {
                     String body = "kw=" + s + "&tbs=" + tbs + "&sign=" + Encryption.enCodeMd5("kw=" + rotation + "tbs=" + tbs + "tiebaclient!!!");
                     JSONObject post = new JSONObject();
                     post = Request.post(SIGN_URL, body);
-                    int randomTime = new Random().nextInt(200) + 300;
+                    int randomTime = new Random().nextInt(5000) + 5000;
                     LOGGER.info("等待 {} 毫秒", randomTime);
                     TimeUnit.MILLISECONDS.sleep(randomTime);
                     if ("0".equals(post.getString("error_code"))) {
