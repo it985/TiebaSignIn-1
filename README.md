@@ -1,11 +1,5 @@
 <div align="center"> 
 <h1 align="center">贴吧签到助手（PushPlus版）</h1>
-<img src="https://img.shields.io/github/issues/srcrs/TiebaSignIn?color=green">
-<img src="https://img.shields.io/github/stars/srcrs/TiebaSignIn?color=yellow">
-<img src="https://img.shields.io/github/forks/srcrs/TiebaSignIn?color=orange">
-<img src="https://img.shields.io/github/license/srcrs/TiebaSignIn?color=ff69b4">
-<img src="https://img.shields.io/github/languages/code-size/srcrs/TiebaSignIn?color=blueviolet">
-</div>
 
 # 简介
 
@@ -67,19 +61,3 @@ BDUSS | xxxxxxxxxxx
 Name | Value
 -|-
 SCKEY | xxxxxxxxxx
-
-## 2020-11-01
-
-+ 代码重构
-
-+ 修改签到策略
-
-大大提高一次运行，贴吧签到的成功率，基本很少的贴吧会签到失败。
-
-+ 去除多用户的支持
-
-+ 增加支持server酱推送，可以推送至微信
-
-## 2020-10-19
-
-~~增加支持多账户签到，每个账号的`BDUSS`使用`&&`分割，具体格式如下。~~
